@@ -1,17 +1,11 @@
 ---
-layout: post
-title: NR ONE!!
-customVar: nr-one
+title: sample post
+author: nrone
 ---
 
-<ul>
-{% for org_hash in site.data.personas %}
-{% assign org = org_hash.{{ post.customVar }} %}
-  <li>
-    <a href="https://github.com/{{ org.username }}">
-      {{ org.name }}
-    </a>
-    ({{ org.members | size }} members)
-  </li>
-{% endfor %}
-</ul>
+{% assign tester = site.data.testers[page.author] %}
+<a rel="author"
+  href="https://twitter.com/{{ tester.name }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>

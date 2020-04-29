@@ -5,9 +5,9 @@ title: Staff
 <h1>testers</h1>
 
 <ul>
-  {% for tester in site.testers %}
+  {% for tester in site.data.testers %}
     <li>
-      <h2>{{ tester.title }}</h2>
+      <h2>{{ tester.name }}</h2>
       <h3>{{ tester.position }}</h3>
       <p>{{ tester.content }}</p>
     </li>
