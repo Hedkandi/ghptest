@@ -1,6 +1,5 @@
 ---
 title: sample post
-author: dave
 ---
 
 <ul>
