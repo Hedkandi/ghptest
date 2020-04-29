@@ -1,6 +1,6 @@
 ---
 title: sample post
-author: nrone
+author: nrone.json
 ---
 
 {% assign tester = site.data.testers[page.author] %}
