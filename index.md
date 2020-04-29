@@ -3,11 +3,9 @@ title: sample post
 ---
 
 <ul>
-{% for org_hash in site.data.personas %}
-{% assign org = org_hash[1] %}
+{% for post in site.posts %}
   <li>
-        {{% link _site/subfolder/nr-one.md %}}
-      {{ org.name }} - {{ org.interest }}
+      {{ post.name }} - {{ post.interest }}
   </li>
 {% endfor %}
 </ul>
