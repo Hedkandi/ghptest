@@ -7,7 +7,7 @@ title: Staff
 <ul>
   {% for tester in site.testers %}
     <li>
-      <h2>{{ tester.name }}</h2>
+      <h2>{{ tester.title }}</h2>
       <h3>{{ tester.position }}</h3>
       <p>{{ tester.content | markdownify }}</p>
     </li>
