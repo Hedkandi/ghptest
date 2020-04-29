@@ -9,7 +9,7 @@ title: Staff
     <li>
       <h2>{{ tester.title }}</h2>
       <h3>{{ tester.position }}</h3>
-      <p>{{ tester.content | markdownify }}</p>
+      <p>{{ tester.content }}</p>
     </li>
   {% endfor %}
 </ul>
